@@ -1,170 +1,121 @@
-/* Base + Login mantidos */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #000;
-  color: white;
-}
-.login-page {
+/* === PAINEL FUTURISTA === */
+.painel-futurista-wrapper {
   display: flex;
   height: 100vh;
   width: 100vw;
-}
-.login-left {
-  flex: 3;
-  background-color: #000;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 8%;
-}
-.login-left h1 {
-  font-size: 2.8rem;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-.login-left p {
-  font-size: 1.15rem;
-  color: #cccccc;
-  max-width: 80%;
-  line-height: 1.7;
-}
-.login-right {
-  flex: 2;
-  background: #0f0f0f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.login-box {
-  width: 100%;
-  max-width: 380px;
-  background: #1a1a1a;
-  padding: 40px 30px;
-  border-radius: 12px;
-  border: 1px solid #d4af37;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.logo-premium-center {
-  width: 160px;
-  margin-bottom: 20px;
-}
-.login-box h2 {
-  margin-bottom: 20px;
-  color: #d4af37;
-  text-align: center;
-  width: 100%;
-}
-.login-box input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  background: #2b2b2b;
-  border: 1px solid #444;
-  border-radius: 8px;
-  color: white;
-  font-size: 1rem;
-}
-.login-box input::placeholder {
-  color: #aaa;
-}
-.login-box button {
-  width: 100%;
-  padding: 12px;
-  background: #d4af37;
-  color: black;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.login-box button:hover {
-  background: #f5c942;
 }
 
-/* Painel */
-.painel-wrapper {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-}
-.painel-sidebar {
+.painel-futurista-sidebar {
   width: 240px;
-  background-color: #1a1a1a;
-  padding: 30px 20px;
+  background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
   border-right: 1px solid #333;
-  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
 }
-.painel-sidebar h2 {
+
+.sidebar-title {
   color: #d4af37;
-  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
 }
-.painel-sidebar ul {
+
+.painel-futurista-sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
-.painel-sidebar li {
-  margin: 15px 0;
-  font-size: 1rem;
+
+.painel-futurista-sidebar li {
+  padding: 10px 0;
+  color: #bbb;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
 }
-.painel-sidebar li:hover {
-  color: #f5c942;
+
+.painel-futurista-sidebar li:hover {
+  color: #d4af37;
+  border-bottom: 1px solid #d4af37;
 }
-.painel-main {
+
+.painel-futurista-main {
   flex: 1;
   padding: 40px;
+  background: #111;
   overflow-y: auto;
-  background-color: #121212;
 }
-.painel-header h1 {
-  font-size: 2rem;
+
+.painel-futurista-header h1 {
   color: #d4af37;
-}
-.painel-header p {
-  color: #aaa;
-  margin-top: 5px;
-  margin-bottom: 30px;
-}
-.painel-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.painel-card {
-  background-color: #1f1f1f;
-  padding: 20px;
-  border-radius: 12px;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  border: 1px solid #333;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
-}
-.painel-card h3 {
-  color: #f5c942;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
-.painel-bloco {
-  margin-top: 40px;
+.painel-futurista-header p {
+  color: #aaa;
+  margin-bottom: 40px;
 }
 
-.painel-bloco h2 {
+.painel-futurista-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.futurista-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1;
+  min-width: 260px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  transition: 0.3s ease;
+}
+
+.futurista-card:hover {
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+  transform: translateY(-4px);
+}
+
+.futurista-card h3 {
+  color: #f5c942;
+  margin-bottom: 12px;
+}
+
+.painel-futurista-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.futurista-module {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 260px;
+  border: 1px solid #333;
+}
+
+.futurista-module h4 {
   color: #d4af37;
   margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
-.painel-lista {
-  list-style: disc;
-  padding-left: 20px;
+.futurista-module ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.futurista-module li {
+  padding: 8px 0;
   color: #ccc;
+  border-bottom: 1px solid #2a2a2a;
 }
