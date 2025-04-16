@@ -16,9 +16,12 @@ function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-left">
-        <img src="/logo-magnata.png" alt="Logo" className="logo-premium" />
-        <h1>Bem-vindo de volta</h1>
-        <p>Acesso exclusivo à área de membros da Magnata's Company</p>
+        <h1>O próximo nível da inteligência estratégica</h1>
+        <p>
+          Transforme sua rotina de decisões com acesso exclusivo ao sistema Executor 13.0,
+          desenvolvido para mentes que lideram e executam.
+          Aqui, cada clique é um passo à frente no jogo.
+        </p>
       </div>
       <div className="login-right">
         <div className="login-box">
