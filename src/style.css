@@ -71,12 +71,12 @@ body {
   margin: 0;
 }
 
-.main-header p {
+.main-header p.subtext-br {
   color: #bbb;
   margin: 5px 0 40px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px;
+  letter-spacing: 3px;
+  font-size: 13.5px;
 }
 
 .main-modules {
