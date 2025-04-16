@@ -116,4 +116,11 @@ body {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0
+  box-shadow: 0 0 20px rgba(253, 212, 95, 0.08);
+}
+
+.bottom-card h3 {
+  color: #fdd45f;
+  font-size: 16px;
+  margin: 0;
+}
