@@ -1,77 +1,63 @@
-/* Layout geral do painel */
-.painel-container {
-  display: flex;
+/* Fundo elegante preto */
+.login-magnata-bg {
+  background-color: #0f0f0f;
   height: 100vh;
-}
-
-/* Sidebar */
-.sidebar {
-  background-color: #2f3640;
-  color: white;
-  width: 240px;
-  padding: 30px 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.sidebar-logo {
-  width: 100px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.sidebar ul {
-  list-style: none;
-  width: 100%;
-  padding: 0;
-}
-
-.sidebar li {
-  padding: 12px;
+/* Cartão com contorno dourado */
+.login-card-magnata {
+  background-color: #1a1a1a;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 40px 30px;
+  width: 350px;
   text-align: center;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  cursor: pointer;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+/* Logo com espaçamento */
+.logo-magnata {
+  width: 100px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+}
+
+/* Inputs elegantes */
+.login-card-magnata input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #2b2b2b;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.login-card-magnata input::placeholder {
+  color: #aaaaaa;
+}
+
+/* Botão com estilo premium */
+.login-card-magnata button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #d4af37;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
   transition: 0.3s;
 }
 
-.sidebar li:hover {
-  background-color: #40739e;
-}
-
-/* Conteúdo principal */
-.main-content {
-  flex-grow: 1;
-  background-color: #f5f6fa;
-  padding: 30px;
-  overflow-y: auto;
-}
-
-/* Cabeçalho do painel */
-.painel-header h1 {
-  font-size: 1.8rem;
-  margin-bottom: 5px;
-}
-
-.painel-header p {
-  color: #666;
-  margin-bottom: 30px;
-}
-
-/* Cards */
-.cards-area {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 20px;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+.login-card-magnata button:hover {
+  background-color: #f5c942;
+  box-shadow: 0 0 10px #d4af37;
 }
