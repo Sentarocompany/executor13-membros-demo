@@ -1,5 +1,5 @@
 import React from 'react';
-import './Painel.css';
+import './style.css';
 
 export default function Painel() {
   return (
