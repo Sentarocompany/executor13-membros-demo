@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap");
+
 body {
   margin: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Orbitron", sans-serif;
   background: #0d0d0d;
   color: #f5f5f5;
 }
@@ -57,7 +59,7 @@ body {
 
 .main-panel {
   flex: 1;
-  padding: 40px;
+  padding: 40px 50px 60px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -71,15 +73,16 @@ body {
 
 .main-header p {
   color: #bbb;
-  margin: 5px 0 30px;
+  margin: 5px 0 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .main-modules {
   display: flex;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .module-card {
@@ -87,7 +90,7 @@ body {
   padding: 30px;
   border-radius: 15px;
   background: #1b1b1b;
-  box-shadow: 0 0 25px rgba(253, 212, 95, 0.2);
+  box-shadow: 0 0 45px rgba(253, 212, 95, 0.3), inset 0 0 30px rgba(253, 212, 95, 0.15);
   text-align: left;
   transition: 0.3s;
 }
@@ -103,14 +106,6 @@ body {
   margin: 0;
 }
 
-.module-card.glow-left {
-  box-shadow: inset 0 0 20px rgba(253, 212, 95, 0.3), 0 0 25px rgba(253, 212, 95, 0.15);
-}
-
-.module-card.glow-right {
-  box-shadow: inset 0 0 20px rgba(253, 212, 95, 0.3), 0 0 25px rgba(253, 212, 95, 0.15);
-}
-
 .bottom-modules {
   display: flex;
   gap: 30px;
@@ -121,10 +116,4 @@ body {
   background: #111;
   padding: 20px;
   border-radius: 12px;
-}
-
-.bottom-card h3 {
-  color: #fdd45f;
-  font-size: 16px;
-  margin: 0;
-}
+  box-shadow: 0
