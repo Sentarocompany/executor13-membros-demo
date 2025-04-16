@@ -25,8 +25,8 @@ export default function Painel() {
 
       <main className="main-panel">
         <div className="main-header">
-          <h1>EXECUTOR 13.0</h1>
-          <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
+          <h1>Magnata's Company</h1>
+          <p className="subtext-br">ACESSO À INTELIGÊNCIA ESTRATÉGICA</p>
         </div>
 
         <div className="main-modules">
