@@ -25,17 +25,17 @@ export default function Painel() {
 
       <main className="main-panel">
         <div className="main-header">
-          <h1>Magnat's Company</h1>
+          <h1>Magnata’s Company</h1>
           <p className="subtext-br">ACESSO À INTELIGÊNCIA ESTRATÉGICA</p>
         </div>
 
         <div className="main-modules">
           <div className="module-card glow-left">
-            <h2>MEGA MÓDULO MAGNATA</h2>
+            <h2>MEGA MAGNATA’S V1</h2>
             <p>MÓDULO DE PRODUTO</p>
           </div>
           <div className="module-card glow-right">
-            <h2>EXECUTOR 1.3</h2>
+            <h2>EXECUTOR 13</h2>
             <p>MÓDULO CENTRAL</p>
           </div>
         </div>
