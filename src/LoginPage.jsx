@@ -22,6 +22,7 @@ function LoginPage() {
       </div>
       <div className="login-right">
         <div className="login-box">
+          <img src="/logo-magnata.png" alt="Logo" className="logo-premium-center" />
           <h2>Entrar</h2>
           <input
             type="text"
