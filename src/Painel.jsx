@@ -3,48 +3,44 @@ import './style.css';
 
 export default function Painel() {
   return (
-    <div className="dashboard">
-      <aside className="sidebar">
-        <div className="sidebar-logo">MAGNATA’S COMPANY</div>
-        <nav>
-          <ul>
-            <li className="active"><span className="icon">🏠</span> Dashboard</li>
-            <li><span className="icon">📊</span> Análises</li>
-            <li><span className="icon">🧠</span> Módulos</li>
-            <li><span className="icon">⚙️</span> Configurações</li>
-          </ul>
-        </nav>
+    <div className="genius-panel">
+      <aside className="genius-sidebar">
+        <div className="sidebar-logo-placeholder"></div>
+        <ul className="sidebar-nav">
+          <li className="active"><span className="dot" /> DASHBOARD</li>
+          <li><span className="dot" /> ANALYTICS</li>
+          <li><span className="dot" /> MODELS</li>
+          <li><span className="dot" /> SETTINGS</li>
+        </ul>
       </aside>
 
-      <main className="main-area">
-        <header>
+      <main className="genius-main">
+        <header className="genius-header">
           <h1>EXECUTOR 13.0</h1>
-          <p>SISTEMA PRIVADO DE INTELIGÊNCIA ESTRATÉGICA</p>
+          <p>PRIVATE AI SYSTEM FOR STRATEGIC INTELLIGENCE</p>
         </header>
 
-        <section className="card-grid">
-          <div className="card glow">
-            <h2>MEGA MAGNATA’S V1</h2>
-            <p>Módulo de Produto</p>
+        <section className="genius-top-cards">
+          <div className="product-card glow">
+            <h2>MEGA<br/>MAGNATA'S V1</h2>
+            <p>PRODUCT MODULE</p>
           </div>
-          <div className="card glow">
+          <div className="product-card glow">
             <h2>EXECUTOR 13.0</h2>
-            <p>Módulo de Produto</p>
+            <p>PRODUCT MODULE</p>
           </div>
-          <div className="card glass">
-            <h3>Conteúdos Recentes</h3>
-            <ul>
-              <li>Aula 01 - Estratégia</li>
-              <li>Aula 02 - Execução</li>
-            </ul>
+        </section>
+
+        <section className="genius-bottom-cards">
+          <div className="glass-card">
+            <h3>RECENT CONTENT</h3>
+            <div className="content-line"></div>
+            <div className="content-line"></div>
           </div>
-          <div className="card glass">
-            <h3>Configurações</h3>
-            <ul>
-              <li>Conta</li>
-              <li>Discord Vinculado</li>
-              <li>Notificações</li>
-            </ul>
+          <div className="glass-card">
+            <h3>USER SETTINGS</h3>
+            <div className="content-line"></div>
+            <div className="content-line"></div>
           </div>
         </section>
       </main>
