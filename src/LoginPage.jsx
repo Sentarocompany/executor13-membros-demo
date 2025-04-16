@@ -1,68 +1,82 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./style.css"; // Se quiser personalizar por aqui
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [senha, setSenha] = useState("");
 
-  const handleLogin = () => {
-    if (email === "admin" && password === "Luhanjoao123!") {
-      setIsLoggedIn(true);
-    } else {
-      alert("Acesso negado. Verifique suas credenciais.");
-    }
+  const handleLogin = (e) => {
+    e.preventDefault();
+    // Aqui você pode adicionar validação simples se quiser
+    navigate("/painel");
   };
 
-  if (!isLoggedIn) {
-    return (
-      <div className="flex h-screen items-center justify-center bg-gray-900">
-        <div className="w-full max-w-md p-6 bg-white rounded-2xl shadow-xl">
-          <h1 className="text-2xl font-bold mb-4 text-center text-black">Executor 13.0 - Área de Membros</h1>
-          <input
-            type="text"
-            placeholder="Usuário"
-            className="mb-4 w-full p-2 rounded"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="password"
-            placeholder="Senha"
-            className="mb-4 w-full p-2 rounded"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          <button className="w-full p-2 bg-black text-white rounded" onClick={handleLogin}>Entrar</button>
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="min-h-screen bg-gray-950 text-white p-6">
-      <header className="text-3xl font-bold mb-6">Painel - Executor 13.0</header>
-      <div className="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
-        <div className="bg-gray-800 p-4 rounded-2xl">
-          <h2 className="text-xl font-semibold">Status do Sistema</h2>
-          <p className="mt-2 text-green-400">✅ Rodando normalmente</p>
-          <p className="text-sm text-gray-400">Última análise: 10:07h</p>
-        </div>
-        <div className="bg-gray-800 p-4 rounded-2xl">
-          <h2 className="text-xl font-semibold">Campanhas Ativas</h2>
-          <ul className="mt-2 text-sm">
-            <li>👟 COMPRE 1 LEVE 2 - R$20/dia</li>
-            <li>🔥 Teste de Criativos - R$15/dia</li>
-          </ul>
-        </div>
-        <div className="bg-gray-800 p-4 rounded-2xl">
-          <h2 className="text-xl font-semibold">Logs Recentes</h2>
-          <ul className="mt-2 text-sm text-gray-300">
-            <li>📌 Campanha duplicada às 09:32h</li>
-            <li>⛔ Campanha pausada (CPA alto)</li>
-            <li>✅ Nova campanha criada com sucesso</li>
-          </ul>
-        </div>
-      </div>
+    <div style={styles.container}>
+      <img src="/logo-magnata.png" alt="Logo" style={styles.logo} />
+      <form onSubmit={handleLogin} style={styles.form}>
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+          style={styles.input}
+        />
+        <input
+          type="password"
+          placeholder="Senha"
+          value={senha}
+          onChange={(e) => setSenha(e.target.value)}
+          required
+          style={styles.input}
+        />
+        <button type="submit" style={styles.button}>
+          Entrar
+        </button>
+      </form>
     </div>
   );
 }
+
+const styles = {
+  container: {
+    backgroundColor: "#0f172a",
+    color: "#fff",
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "'Segoe UI', sans-serif",
+  },
+  logo: {
+    width: "180px",
+    marginBottom: "30px",
+  },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    width: "280px",
+    gap: "16px",
+  },
+  input: {
+    padding: "12px",
+    borderRadius: "8px",
+    border: "none",
+    fontSize: "16px",
+  },
+  button: {
+    backgroundColor: "#2563eb",
+    color: "#fff",
+    padding: "12px",
+    border: "none",
+    borderRadius: "8px",
+    cursor: "pointer",
+    fontWeight: "bold",
+    fontSize: "16px",
+    transition: "background 0.3s ease",
+  }
+};
