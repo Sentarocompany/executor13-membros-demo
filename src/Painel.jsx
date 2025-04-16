@@ -1,51 +1,51 @@
 import React from 'react';
-import './style.css';
+import './Painel.css';
 
 export default function Painel() {
   return (
-    <div className="dashboard">
+    <div className="dashboard-container">
       <aside className="sidebar">
-        <div className="sidebar-logo">MAGNATA’S COMPANY</div>
+        <div className="sidebar-logo"></div>
         <nav className="sidebar-menu">
           <ul>
-            <li className="active">Dashboard</li>
-            <li>Analytics</li>
-            <li>Models</li>
+            <li>Dashboard</li>
+            <li>Products</li>
+            <li>Content</li>
+            <li>Reports</li>
             <li>Settings</li>
           </ul>
         </nav>
+        <div className="sidebar-profile"></div>
       </aside>
 
-      <main className="main">
+      <main className="main-content">
         <header className="main-header">
           <h1>EXECUTOR 13.0</h1>
-          <p>Strategic Intelligence Access</p>
+          <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
         </header>
 
-        <section className="product-modules">
-          <div className="card floating glow">
-            <h2>MEGA MAGNATA'S V1</h2>
-            <p>Product Module</p>
+        <section className="modules-row">
+          <div className="card module-card">
+            <h2>MEGA MAGNATA’S V1</h2>
+            <span className="module-sub">PRODUCT MODULE</span>
           </div>
-          <div className="card floating glow">
+          <div className="card module-card">
             <h2>EXECUTOR 13.0</h2>
-            <p>Product Module</p>
+            <span className="module-sub">CORE MODULE</span>
           </div>
         </section>
 
-        <section className="modular-section">
-          <div className="card glass">
-            <h3>Recent Content</h3>
-            <div className="placeholder-line" />
-            <div className="placeholder-line" />
+        <section className="modules-row">
+          <div className="card section-card">
+            <h3>RECENT CONTENT</h3>
           </div>
-          <div className="card glass">
-            <h3>User Settings</h3>
-            <div className="placeholder-line" />
-            <div className="placeholder-line" />
+          <div className="card section-card">
+            <h3>USER SETTINGS</h3>
           </div>
         </section>
       </main>
     </div>
   );
 }
+
+/* ========== Painel.css ========== */
