@@ -4,11 +4,11 @@ import './style.css';
 
 function LoginPage() {
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
+  const [usuario, setUsuario] = useState('');
   const [senha, setSenha] = useState('');
 
   const handleLogin = () => {
-    if (email === 'admin' && senha === '123456') {
+    if (usuario === 'admin' && senha === '123456') {
       navigate('/painel');
     } else {
       alert('Credenciais inválidas');
@@ -16,14 +16,14 @@ function LoginPage() {
   };
 
   return (
-    <div className="login-wrapper">
-      <div className="login-card">
-        <img src="/logo-magnata.png" alt="Logo" className="logo" />
+    <div className="login-magnata-bg">
+      <div className="login-card-magnata">
+        <img src="/logo-magnata.png" alt="Logo" className="logo-magnata" />
         <input
           type="text"
           placeholder="Usuário"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={usuario}
+          onChange={(e) => setUsuario(e.target.value)}
         />
         <input
           type="password"
