@@ -1,54 +1,54 @@
 import React from "react";
-import { FaTachometerAlt, FaBoxOpen, FaFileAlt, FaCog, FaUserCircle } from "react-icons/fa";
-import './style.css'; // 👈 Aqui o CSS é importado
+import "./style.css";
+import { FaTachometerAlt, FaBox, FaFileAlt, FaCog, FaUser } from "react-icons/fa";
 
-const Painel = () => {
+export default function Painel() {
   return (
-    <div className="dashboard">
-      {/* Sidebar */}
+    <div className="painel-container">
       <aside className="sidebar">
-        <div>
-          <h2>DASHBOARD</h2>
-          <nav>
-            <div className="active"><FaTachometerAlt /> <span>Dashboard</span></div>
-            <div><FaBoxOpen /> <span>Products</span></div>
-            <div><FaFileAlt /> <span>Content</span></div>
-            <div><FaFileAlt /> <span>Reports</span></div>
-            <div><FaCog /> <span>Settings</span></div>
+        <div className="sidebar-section">
+          <span className="sidebar-title">DASHBOARD</span>
+          <nav className="sidebar-menu">
+            <ul>
+              <li className="active"><FaTachometerAlt /> Dashboard</li>
+              <li><FaBox /> Products</li>
+              <li><FaFileAlt /> Content</li>
+              <li><FaFileAlt /> Reports</li>
+              <li><FaCog /> Settings</li>
+            </ul>
           </nav>
         </div>
-        <div className="user">
-          <FaUserCircle /> <span>Perfil</span>
+        <div className="user-icon">
+          <FaUser />
         </div>
       </aside>
 
-      {/* Main content */}
-      <main className="main-content">
-        <h1>EXECUTOR 13.0</h1>
-        <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
+      <main className="main-panel">
+        <div className="main-header">
+          <h1>EXECUTOR 13.0</h1>
+          <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
+        </div>
 
-        <div className="card-grid">
-          <div className="card">
+        <div className="main-modules">
+          <div className="module-card glow-left">
             <h2>MEGA MAGNATA'S V1</h2>
             <p>PRODUCT MODULE</p>
           </div>
-          <div className="card">
+          <div className="module-card glow-right">
             <h2>EXECUTOR 1.3</h2>
             <p>CORE MODULE</p>
           </div>
         </div>
 
-        <div className="card-grid">
-          <div className="section-box">
+        <div className="bottom-modules">
+          <div className="bottom-card">
             <h3>RECENT CONTENT</h3>
           </div>
-          <div className="section-box">
+          <div className="bottom-card">
             <h3>USER SETTINGS</h3>
           </div>
         </div>
       </main>
     </div>
   );
-};
-
-export default Painel;
+}
