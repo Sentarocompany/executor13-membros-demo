@@ -13,29 +13,27 @@ body {
 
 .login-left {
   flex: 3;
-  background: url('/bg-login.jpg') center center/cover no-repeat;
+  background-color: #000;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-left: 8%;
-  backdrop-filter: brightness(0.5);
 }
 
 .login-left h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .login-left p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  color: #cccccc;
   max-width: 80%;
-  line-height: 1.6;
-}
-
-.logo-premium {
-  width: 150px;
-  margin-bottom: 30px;
+  line-height: 1.7;
 }
 
 .login-right {
