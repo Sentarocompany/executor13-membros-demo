@@ -11,10 +11,10 @@ export default function Painel() {
           <nav className="sidebar-menu">
             <ul>
               <li className="active"><FaTachometerAlt /> Dashboard</li>
-              <li><FaBox /> Products</li>
-              <li><FaFileAlt /> Content</li>
-              <li><FaFileAlt /> Reports</li>
-              <li><FaCog /> Settings</li>
+              <li><FaBox /> Produtos</li>
+              <li><FaFileAlt /> Conteúdo</li>
+              <li><FaFileAlt /> Relatórios</li>
+              <li><FaCog /> Configurações</li>
             </ul>
           </nav>
         </div>
@@ -25,27 +25,27 @@ export default function Painel() {
 
       <main className="main-panel">
         <div className="main-header">
-          <h1>Magnata's Company</h1>
+          <h1>Magnat's Company</h1>
           <p className="subtext-br">ACESSO À INTELIGÊNCIA ESTRATÉGICA</p>
         </div>
 
         <div className="main-modules">
           <div className="module-card glow-left">
-            <h2>MEGA MAGNATA'S V1</h2>
-            <p>PRODUCT MODULE</p>
+            <h2>MEGA MÓDULO MAGNATA</h2>
+            <p>MÓDULO DE PRODUTO</p>
           </div>
           <div className="module-card glow-right">
             <h2>EXECUTOR 1.3</h2>
-            <p>CORE MODULE</p>
+            <p>MÓDULO CENTRAL</p>
           </div>
         </div>
 
         <div className="bottom-modules">
           <div className="bottom-card">
-            <h3>RECENT CONTENT</h3>
+            <h3>CONTEÚDO RECENTE</h3>
           </div>
           <div className="bottom-card">
-            <h3>USER SETTINGS</h3>
+            <h3>CONFIGURAÇÕES DO USUÁRIO</h3>
           </div>
         </div>
       </main>
