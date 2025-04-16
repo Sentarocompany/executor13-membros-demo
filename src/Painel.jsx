@@ -3,31 +3,31 @@ import './style.css';
 
 export default function Painel() {
   return (
-    <div className="dashboard-wrapper">
+    <div className="dashboard">
       <aside className="sidebar">
-        <div className="logo">MAGNATA’S COMPANY</div>
+        <div className="sidebar-logo">MAGNATA’S COMPANY</div>
         <nav>
           <ul>
-            <li>📊 Dashboard</li>
-            <li>📈 Análises</li>
-            <li>🧠 Módulos</li>
-            <li>⚙️ Configurações</li>
+            <li className="active"><span className="icon">🏠</span> Dashboard</li>
+            <li><span className="icon">📊</span> Análises</li>
+            <li><span className="icon">🧠</span> Módulos</li>
+            <li><span className="icon">⚙️</span> Configurações</li>
           </ul>
         </nav>
       </aside>
 
-      <main className="main-panel">
+      <main className="main-area">
         <header>
           <h1>EXECUTOR 13.0</h1>
-          <p>Sistema privado de inteligência estratégica</p>
+          <p>SISTEMA PRIVADO DE INTELIGÊNCIA ESTRATÉGICA</p>
         </header>
 
-        <div className="grid">
-          <div className="card">
+        <section className="card-grid">
+          <div className="card glow">
             <h2>MEGA MAGNATA’S V1</h2>
             <p>Módulo de Produto</p>
           </div>
-          <div className="card">
+          <div className="card glow">
             <h2>EXECUTOR 13.0</h2>
             <p>Módulo de Produto</p>
           </div>
@@ -46,7 +46,7 @@ export default function Painel() {
               <li>Notificações</li>
             </ul>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );
