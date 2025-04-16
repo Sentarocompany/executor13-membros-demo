@@ -8,6 +8,7 @@ function PainelConteudo() {
         <h2>Magnata’s COMPANY</h2>
         <ul>
           <li>🏠 Dashboard</li>
+          <li>📦 Produtos</li>
           <li>📂 Conteúdos</li>
           <li>⚙️ Configurações</li>
           <li>🚪 Sair</li>
@@ -16,21 +17,40 @@ function PainelConteudo() {
       <main className="painel-main">
         <header className="painel-header">
           <h1>Executor 13.0</h1>
-          <p>Interface de demonstração com layout profissional</p>
+          <p>Acesso à simulação de conteúdos internos da plataforma.</p>
         </header>
-        <section className="painel-cards">
-          <div className="painel-card">
-            <h3>Módulo 1</h3>
-            <p>Introdução ao Executor 13.0 com visão geral do sistema.</p>
+
+        <section className="painel-bloco">
+          <h2>📦 Produtos Disponíveis</h2>
+          <div className="painel-cards">
+            <div className="painel-card">
+              <h3>MEGA MAGNATA’S V1</h3>
+              <p>Programa inicial com conteúdos base para mentalidade de execução e autonomia financeira.</p>
+            </div>
+            <div className="painel-card">
+              <h3>EXECUTOR 13.0</h3>
+              <p>Sistema completo de decisões e análise estratégica com acesso exclusivo à inteligência do Magnata.</p>
+            </div>
           </div>
-          <div className="painel-card">
-            <h3>Vídeo Explicativo</h3>
-            <p>Assista a uma apresentação visual de funcionalidades.</p>
-          </div>
-          <div className="painel-card">
-            <h3>Materiais PDF</h3>
-            <p>Arquivos de apoio e leitura complementar.</p>
-          </div>
+        </section>
+
+        <section className="painel-bloco">
+          <h2>📂 Conteúdos Recentes</h2>
+          <ul className="painel-lista">
+            <li>Aula 01 – Introdução ao Executor</li>
+            <li>Aula 02 – Mindset de Execução Magnata</li>
+            <li>PDF – Framework Decisões Rápidas</li>
+            <li>Checklist de Ação Diária (download)</li>
+          </ul>
+        </section>
+
+        <section className="painel-bloco">
+          <h2>⚙️ Configurações</h2>
+          <ul className="painel-lista">
+            <li>Alterar senha de acesso</li>
+            <li>Atualizar dados do perfil</li>
+            <li>Vincular conta Discord para notificações</li>
+          </ul>
         </section>
       </main>
     </div>
