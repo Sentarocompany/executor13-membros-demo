@@ -7,7 +7,7 @@ function LoginPage() {
 
   const handleLogin = () => {
     if (usuario === 'admin' && senha === '123456') {
-      alert('Login realizado com sucesso!');
+      window.location.href = '/painel';
     } else {
       alert('Credenciais inválidas');
     }
