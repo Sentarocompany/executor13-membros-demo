@@ -1,60 +1,92 @@
-import React from 'react';
-import './style.css';
 
-function PainelConteudo() {
-  return (
-    <div className="painel-wrapper">
-      <aside className="painel-sidebar">
-        <h2>Magnata’s COMPANY</h2>
-        <ul>
-          <li>🏠 Dashboard</li>
-          <li>📦 Produtos</li>
-          <li>📂 Conteúdos</li>
-          <li>⚙️ Configurações</li>
-          <li>🚪 Sair</li>
-        </ul>
-      </aside>
-      <main className="painel-main">
-        <header className="painel-header">
-          <h1>Executor 13.0</h1>
-          <p>Acesso à simulação de conteúdos internos da plataforma.</p>
-        </header>
-
-        <section className="painel-bloco">
-          <h2>📦 Produtos Disponíveis</h2>
-          <div className="painel-cards">
-            <div className="painel-card">
-              <h3>MEGA MAGNATA’S V1</h3>
-              <p>Programa inicial com conteúdos base para mentalidade de execução e autonomia financeira.</p>
-            </div>
-            <div className="painel-card">
-              <h3>EXECUTOR 13.0</h3>
-              <p>Sistema completo de decisões e análise estratégica com acesso exclusivo à inteligência do Magnata.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="painel-bloco">
-          <h2>📂 Conteúdos Recentes</h2>
-          <ul className="painel-lista">
-            <li>Aula 01 – Introdução ao Executor</li>
-            <li>Aula 02 – Mindset de Execução Magnata</li>
-            <li>PDF – Framework Decisões Rápidas</li>
-            <li>Checklist de Ação Diária (download)</li>
-          </ul>
-        </section>
-
-        <section className="painel-bloco">
-          <h2>⚙️ Configurações</h2>
-          <ul className="painel-lista">
-            <li>Alterar senha de acesso</li>
-            <li>Atualizar dados do perfil</li>
-            <li>Vincular conta Discord para notificações</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  );
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
 }
-
-export default PainelConteudo;
+.futuristic-panel {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(145deg, #0d0d0d, #1c1c1c);
+}
+.sidebar {
+  width: 240px;
+  padding: 30px 20px;
+  background-color: #111;
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar h2 {
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+.sidebar h2 span {
+  color: #888;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar li {
+  cursor: pointer;
+  padding: 8px 10px;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.sidebar li:hover {
+  background-color: #d4af3733;
+  color: #d4af37;
+}
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
+.painel-header h1 {
+  font-size: 2rem;
+  color: #d4af37;
+}
+.painel-header p {
+  color: #aaa;
+  margin-top: 6px;
+  margin-bottom: 30px;
+}
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  border: 1px solid #333;
+  padding: 24px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 340px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  transition: transform 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+.glass-card h3, .glass-card h4 {
+  color: #f5c942;
+}
+.glass-card ul {
+  padding-left: 20px;
+  color: #ccc;
+  margin-top: 10px;
+}
