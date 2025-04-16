@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./LoginPage";
-import "../style.css";
+import PainelConteudo from "./PainelConteudo";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <LoginPage />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<LoginPage />} />
+      <Route path="/conteudos" element={<PainelConteudo />} />
+    </Routes>
+  </BrowserRouter>
 );
