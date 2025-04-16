@@ -1,121 +1,121 @@
-/* === PAINEL FUTURISTA === */
-.painel-futurista-wrapper {
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #f5f5f5;
+}
+
+.executive-wrapper {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
 
-.painel-futurista-sidebar {
-  width: 240px;
-  background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
-  border-right: 1px solid #333;
+.executive-sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom, #131313, #0a0a0a);
   padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
+  border-right: 1px solid #222;
 }
 
-.sidebar-title {
+.executive-sidebar h1 {
+  font-size: 1.8rem;
   color: #d4af37;
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
-.painel-futurista-sidebar ul {
+.executive-sidebar ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-.painel-futurista-sidebar li {
-  padding: 10px 0;
-  color: #bbb;
+.executive-sidebar li {
+  color: #f5c942;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
   cursor: pointer;
-  transition: 0.3s;
-  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
-.painel-futurista-sidebar li:hover {
-  color: #d4af37;
-  border-bottom: 1px solid #d4af37;
+.executive-sidebar li:hover {
+  color: #ffffff;
 }
 
-.painel-futurista-main {
+.executive-main {
   flex: 1;
   padding: 40px;
-  background: #111;
-  overflow-y: auto;
+  background: #0e0e0e;
 }
 
-.painel-futurista-header h1 {
-  color: #d4af37;
+.executive-header h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.painel-futurista-header p {
-  color: #aaa;
-  margin-bottom: 40px;
-}
-
-.painel-futurista-cards {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-}
-
-.futurista-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 24px;
-  flex: 1;
-  min-width: 260px;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
-  transition: 0.3s ease;
-}
-
-.futurista-card:hover {
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-  transform: translateY(-4px);
-}
-
-.futurista-card h3 {
   color: #f5c942;
-  margin-bottom: 12px;
+  letter-spacing: 2px;
 }
 
-.painel-futurista-grid {
+.executive-header p {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-bottom: 40px;
+}
+
+.executive-products {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(245, 201, 66, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  flex: 1;
+  box-shadow: 0 0 20px rgba(245, 201, 66, 0.15);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 0 30px rgba(245, 201, 66, 0.4);
+}
+
+.product-card h3 {
+  color: #f5c942;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.executive-modules {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 
-.futurista-module {
-  background: #1b1b1b;
-  padding: 20px;
+.module-box {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid #333;
   border-radius: 12px;
+  padding: 20px;
   flex: 1;
   min-width: 260px;
-  border: 1px solid #333;
+  backdrop-filter: blur(8px);
 }
 
-.futurista-module h4 {
-  color: #d4af37;
+.module-box h4 {
+  color: #f5c942;
+  font-size: 0.95rem;
   margin-bottom: 15px;
-  font-size: 1.1rem;
 }
 
-.futurista-module ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.futurista-module li {
-  padding: 8px 0;
-  color: #ccc;
-  border-bottom: 1px solid #2a2a2a;
+.module-line {
+  height: 10px;
+  background: #1f1f1f;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
