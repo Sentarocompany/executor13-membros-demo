@@ -1,4 +1,4 @@
-/* ========== BASE ========== */
+/* Base + Login mantidos */
 body {
   margin: 0;
   padding: 0;
@@ -6,14 +6,11 @@ body {
   background: #000;
   color: white;
 }
-
-/* ========== LOGIN ========== */
 .login-page {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
-
 .login-left {
   flex: 3;
   background-color: #000;
@@ -22,7 +19,6 @@ body {
   justify-content: center;
   padding-left: 8%;
 }
-
 .login-left h1 {
   font-size: 2.8rem;
   font-weight: bold;
@@ -30,14 +26,12 @@ body {
   margin-bottom: 20px;
   line-height: 1.2;
 }
-
 .login-left p {
   font-size: 1.15rem;
   color: #cccccc;
   max-width: 80%;
   line-height: 1.7;
 }
-
 .login-right {
   flex: 2;
   background: #0f0f0f;
@@ -45,7 +39,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .login-box {
   width: 100%;
   max-width: 380px;
@@ -58,19 +51,16 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .logo-premium-center {
   width: 160px;
   margin-bottom: 20px;
 }
-
 .login-box h2 {
   margin-bottom: 20px;
   color: #d4af37;
   text-align: center;
   width: 100%;
 }
-
 .login-box input {
   width: 100%;
   padding: 12px;
@@ -81,11 +71,9 @@ body {
   color: white;
   font-size: 1rem;
 }
-
 .login-box input::placeholder {
   color: #aaa;
 }
-
 .login-box button {
   width: 100%;
   padding: 12px;
@@ -97,18 +85,16 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .login-box button:hover {
   background: #f5c942;
 }
 
-/* ========== PAINEL ========== */
+/* Painel */
 .painel-wrapper {
   display: flex;
   height: 100vh;
   width: 100vw;
 }
-
 .painel-sidebar {
   width: 240px;
   background-color: #1a1a1a;
@@ -116,52 +102,43 @@ body {
   border-right: 1px solid #333;
   box-shadow: 2px 0 6px rgba(0, 0, 0, 0.3);
 }
-
 .painel-sidebar h2 {
   color: #d4af37;
   margin-bottom: 30px;
 }
-
 .painel-sidebar ul {
   list-style: none;
   padding: 0;
 }
-
 .painel-sidebar li {
   margin: 15px 0;
   font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s;
 }
-
 .painel-sidebar li:hover {
   color: #f5c942;
 }
-
 .painel-main {
   flex: 1;
   padding: 40px;
   overflow-y: auto;
   background-color: #121212;
 }
-
 .painel-header h1 {
   font-size: 2rem;
   color: #d4af37;
 }
-
 .painel-header p {
   color: #aaa;
   margin-top: 5px;
   margin-bottom: 30px;
 }
-
 .painel-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
-
 .painel-card {
   background-color: #1f1f1f;
   padding: 20px;
@@ -172,8 +149,22 @@ body {
   border: 1px solid #333;
   box-shadow: 0 0 10px rgba(212, 175, 55, 0.15);
 }
-
 .painel-card h3 {
   color: #f5c942;
   margin-bottom: 10px;
+}
+
+.painel-bloco {
+  margin-top: 40px;
+}
+
+.painel-bloco h2 {
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.painel-lista {
+  list-style: disc;
+  padding-left: 20px;
+  color: #ccc;
 }
