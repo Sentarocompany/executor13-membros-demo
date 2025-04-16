@@ -1,49 +1,53 @@
 import React from 'react';
 import './style.css';
 
-function Painel() {
+export default function Painel() {
   return (
-    <div className="painel-wrapper">
-      <aside className="painel-sidebar">
-        <h1>MAGNATA’S COMPANY</h1>
-        <ul>
-          <li>Dashboard</li>
-          <li>Videoaulas</li>
-          <li>Relatórios</li>
-          <li>Configurações</li>
-        </ul>
+    <div className="dashboard-wrapper">
+      <aside className="sidebar">
+        <div className="logo">MAGNATA’S COMPANY</div>
+        <nav>
+          <ul>
+            <li>📊 Dashboard</li>
+            <li>📈 Análises</li>
+            <li>🧠 Módulos</li>
+            <li>⚙️ Configurações</li>
+          </ul>
+        </nav>
       </aside>
 
-      <main className="painel-conteudo">
-        <header className="painel-header">
-          <h2>Executor 13.0</h2>
-          <p>Controle completo da automação em Facebook Ads + acesso à central de aprendizado</p>
+      <main className="main-panel">
+        <header>
+          <h1>EXECUTOR 13.0</h1>
+          <p>Sistema privado de inteligência estratégica</p>
         </header>
 
-        <section className="painel-grid">
-          <div className="card video-box">
-            <h3>Última Aula</h3>
-            <div className="video-container">
-              <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Videoaula"
-                allowFullScreen
-              ></iframe>
-            </div>
+        <div className="grid">
+          <div className="card">
+            <h2>MEGA MAGNATA’S V1</h2>
+            <p>Módulo de Produto</p>
           </div>
-
-          <div className="card dashboard-box">
-            <h3>Resumo da Ativação</h3>
+          <div className="card">
+            <h2>EXECUTOR 13.0</h2>
+            <p>Módulo de Produto</p>
+          </div>
+          <div className="card glass">
+            <h3>Conteúdos Recentes</h3>
             <ul>
-              <li>Campanhas Ativas: <span>3</span></li>
-              <li>Leads Coletados: <span>187</span></li>
-              <li>Status da IA: <span className="ativo">Ativa</span></li>
+              <li>Aula 01 - Estratégia</li>
+              <li>Aula 02 - Execução</li>
             </ul>
           </div>
-        </section>
+          <div className="card glass">
+            <h3>Configurações</h3>
+            <ul>
+              <li>Conta</li>
+              <li>Discord Vinculado</li>
+              <li>Notificações</li>
+            </ul>
+          </div>
+        </div>
       </main>
     </div>
   );
 }
-
-export default Painel;
