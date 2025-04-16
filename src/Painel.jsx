@@ -1,51 +1,54 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import { FaTachometerAlt, FaBoxOpen, FaFileAlt, FaCog, FaUserCircle } from "react-icons/fa";
+import './style.css'; // 👈 Aqui o CSS é importado
 
-export default function Painel() {
+const Painel = () => {
   return (
-    <div className="dashboard-container">
+    <div className="dashboard">
+      {/* Sidebar */}
       <aside className="sidebar">
-        <div className="sidebar-logo"></div>
-        <nav className="sidebar-menu">
-          <ul>
-            <li>Dashboard</li>
-            <li>Products</li>
-            <li>Content</li>
-            <li>Reports</li>
-            <li>Settings</li>
-          </ul>
-        </nav>
-        <div className="sidebar-profile"></div>
+        <div>
+          <h2>DASHBOARD</h2>
+          <nav>
+            <div className="active"><FaTachometerAlt /> <span>Dashboard</span></div>
+            <div><FaBoxOpen /> <span>Products</span></div>
+            <div><FaFileAlt /> <span>Content</span></div>
+            <div><FaFileAlt /> <span>Reports</span></div>
+            <div><FaCog /> <span>Settings</span></div>
+          </nav>
+        </div>
+        <div className="user">
+          <FaUserCircle /> <span>Perfil</span>
+        </div>
       </aside>
 
+      {/* Main content */}
       <main className="main-content">
-        <header className="main-header">
-          <h1>EXECUTOR 13.0</h1>
-          <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
-        </header>
+        <h1>EXECUTOR 13.0</h1>
+        <p>ACCESS TO STRATEGIC INTELLIGENCE</p>
 
-        <section className="modules-row">
-          <div className="card module-card">
-            <h2>MEGA MAGNATA’S V1</h2>
-            <span className="module-sub">PRODUCT MODULE</span>
+        <div className="card-grid">
+          <div className="card">
+            <h2>MEGA MAGNATA'S V1</h2>
+            <p>PRODUCT MODULE</p>
           </div>
-          <div className="card module-card">
-            <h2>EXECUTOR 13.0</h2>
-            <span className="module-sub">CORE MODULE</span>
+          <div className="card">
+            <h2>EXECUTOR 1.3</h2>
+            <p>CORE MODULE</p>
           </div>
-        </section>
+        </div>
 
-        <section className="modules-row">
-          <div className="card section-card">
+        <div className="card-grid">
+          <div className="section-box">
             <h3>RECENT CONTENT</h3>
           </div>
-          <div className="card section-card">
+          <div className="section-box">
             <h3>USER SETTINGS</h3>
           </div>
-        </section>
+        </div>
       </main>
     </div>
   );
-}
+};
 
-/* ========== Painel.css ========== */
+export default Painel;
