@@ -1,45 +1,48 @@
 import React from 'react';
-import './Painel.css';
+import './style.css';
 
 export default function Painel() {
   return (
-    <div className="painel-container">
+    <div className="dashboard">
       <aside className="sidebar">
-        <div className="sidebar-logo" />
-        <nav>
+        <div className="sidebar-logo">MAGNATA’S COMPANY</div>
+        <nav className="sidebar-menu">
           <ul>
-            <li><span className="icon">📊</span> Dashboard</li>
-            <li><span className="icon">📈</span> Analytics</li>
-            <li><span className="icon">🧠</span> Models</li>
-            <li><span className="icon">⚙️</span> Settings</li>
+            <li className="active">Dashboard</li>
+            <li>Analytics</li>
+            <li>Models</li>
+            <li>Settings</li>
           </ul>
         </nav>
       </aside>
 
-      <main className="painel-main">
-        <header className="painel-header">
+      <main className="main">
+        <header className="main-header">
           <h1>EXECUTOR 13.0</h1>
-          <p>PRIVATE AI SYSTEM FOR STRATEGIC INTELLIGENCE</p>
+          <p>Strategic Intelligence Access</p>
         </header>
 
-        <section className="painel-grid">
-          <div className="card highlight">
+        <section className="product-modules">
+          <div className="card floating glow">
             <h2>MEGA MAGNATA'S V1</h2>
-            <p>PRODUCT MODULE</p>
+            <p>Product Module</p>
           </div>
-          <div className="card highlight">
+          <div className="card floating glow">
             <h2>EXECUTOR 13.0</h2>
-            <p>PRODUCT MODULE</p>
+            <p>Product Module</p>
           </div>
-          <div className="card">
-            <h3>RECENT CONTENT</h3>
-            <div className="skeleton-line" />
-            <div className="skeleton-line" />
+        </section>
+
+        <section className="modular-section">
+          <div className="card glass">
+            <h3>Recent Content</h3>
+            <div className="placeholder-line" />
+            <div className="placeholder-line" />
           </div>
-          <div className="card">
-            <h3>USER SETTINGS</h3>
-            <div className="skeleton-line" />
-            <div className="skeleton-line" />
+          <div className="card glass">
+            <h3>User Settings</h3>
+            <div className="placeholder-line" />
+            <div className="placeholder-line" />
           </div>
         </section>
       </main>
