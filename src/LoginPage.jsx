@@ -20,7 +20,6 @@ function LoginPage() {
         <p>
           Transforme sua rotina de decisões com acesso exclusivo ao sistema Executor 13.0,
           desenvolvido para mentes que lideram e executam.
-          Aqui, cada clique é um passo à frente no jogo.
         </p>
       </div>
       <div className="login-right">
