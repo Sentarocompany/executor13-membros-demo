@@ -3,52 +3,46 @@ import './style.css';
 
 function Painel() {
   return (
-    <div className="painel-futurista-wrapper">
-      <aside className="painel-futurista-sidebar">
-        <div className="sidebar-title">MAGNATA’S COMPANY</div>
+    <div className="executive-wrapper">
+      <aside className="executive-sidebar">
+        <h1>⚡</h1>
         <nav>
           <ul>
-            <li>Dashboard</li>
-            <li>Produtos</li>
-            <li>Conteúdos</li>
-            <li>Configurações</li>
+            <li>DASHBOARD</li>
+            <li>ANALYTICS</li>
+            <li>MODELS</li>
+            <li>SETTINGS</li>
           </ul>
         </nav>
       </aside>
 
-      <main className="painel-futurista-main">
-        <header className="painel-futurista-header">
-          <h1>Executor 13.0</h1>
-          <p>Interface moderna, refinada e preparada para apresentar ao investidor.</p>
+      <main className="executive-main">
+        <header className="executive-header">
+          <h2>EXECUTOR 13.0</h2>
+          <p>PRIVATE AI SYSTEM FOR STRATEGIC INTELLIGENCE</p>
         </header>
 
-        <section className="painel-futurista-cards">
-          <div className="futurista-card">
+        <section className="executive-products">
+          <div className="product-card"> 
             <h3>MEGA MAGNATA’S V1</h3>
-            <p>Base estratégica para mentes em expansão.</p>
+            <p>PRODUCT MODULE</p>
           </div>
-          <div className="futurista-card">
+          <div className="product-card"> 
             <h3>EXECUTOR 13.0</h3>
-            <p>Sistema de execução lógica com IA integrada.</p>
+            <p>PRODUCT MODULE</p>
           </div>
         </section>
 
-        <section className="painel-futurista-grid">
-          <div className="futurista-module">
-            <h4>Últimos Conteúdos</h4>
-            <ul>
-              <li>Aula 01 - Apresentação</li>
-              <li>Aula 02 - Execução Real</li>
-              <li>PDF - Mapa de Foco</li>
-            </ul>
+        <section className="executive-modules">
+          <div className="module-box">
+            <h4>RECENT CONTENT</h4>
+            <div className="module-line"></div>
+            <div className="module-line"></div>
           </div>
-          <div className="futurista-module">
-            <h4>Configurações</h4>
-            <ul>
-              <li>Alterar senha</li>
-              <li>Ativar notificações</li>
-              <li>Vincular Discord</li>
-            </ul>
+          <div className="module-box">
+            <h4>USER SETTINGS</h4>
+            <div className="module-line"></div>
+            <div className="module-line"></div>
           </div>
         </section>
       </main>
